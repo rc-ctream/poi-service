@@ -1,0 +1,282 @@
+[
+  {
+    "name": "Koutoubia Mosque",
+    "category": "Religious",
+    "address": {
+      "street": "Avenue Mohammed V",
+      "city": "Marrakech",
+      "postalCode": "40000",
+      "country": "Morocco",
+      "location": {
+        "latitude": 31.6240,
+        "longitude": -7.9936
+      }
+    }
+  },
+  {
+    "name": "Hassan II Mosque",
+    "category": "Religious",
+    "address": {
+      "street": "Boulevard de la Corniche",
+      "city": "Casablanca",
+      "postalCode": "20000",
+      "country": "Morocco",
+      "location": {
+        "latitude": 33.6089,
+        "longitude": -7.6328
+      }
+    }
+  },
+  {
+    "name": "Chefchaouen Medina",
+    "category": "Historic",
+    "address": {
+      "street": "Rue El Haouta",
+      "city": "Chefchaouen",
+      "postalCode": "91000",
+      "country": "Morocco",
+      "location": {
+        "latitude": 35.1714,
+        "longitude": -5.2699
+      }
+    }
+  },
+  {
+    "name": "Statue of Liberty",
+    "category": "Monument",
+    "address": {
+      "street": "Liberty Island",
+      "city": "New York",
+      "postalCode": "10004",
+      "country": "USA",
+      "location": {
+        "latitude": 40.6892,
+        "longitude": -74.0445
+      }
+    }
+  },
+  {
+    "name": "Eiffel Tower",
+    "category": "Monument",
+    "address": {
+      "street": "Champ de Mars",
+      "city": "Paris",
+      "postalCode": "75007",
+      "country": "France",
+      "location": {
+        "latitude": 48.8584,
+        "longitude": 2.2945
+      }
+    }
+  },
+  {
+    "name": "Great Wall of China",
+    "category": "Historic",
+    "address": {
+      "street": "Huairou District",
+      "city": "Beijing",
+      "postalCode": "101406",
+      "country": "China",
+      "location": {
+        "latitude": 40.4319,
+        "longitude": 116.5704
+      }
+    }
+  },
+  {
+    "name": "Machu Picchu",
+    "category": "Historic",
+    "address": {
+      "street": "Machu Picchu",
+      "city": "Cusco",
+      "postalCode": "08680",
+      "country": "Peru",
+      "location": {
+        "latitude": -13.1631,
+        "longitude": -72.5450
+      }
+    }
+  },
+  {
+    "name": "Sydney Opera House",
+    "category": "Cultural",
+    "address": {
+      "street": "Bennelong Point",
+      "city": "Sydney",
+      "postalCode": "2000",
+      "country": "Australia",
+      "location": {
+        "latitude": -33.8568,
+        "longitude": 151.2153
+      }
+    }
+  },
+  {
+    "name": "Colosseum",
+    "category": "Historic",
+    "address": {
+      "street": "Piazza del Colosseo",
+      "city": "Rome",
+      "postalCode": "00184",
+      "country": "Italy",
+      "location": {
+        "latitude": 41.8902,
+        "longitude": 12.4922
+      }
+    }
+  },
+  {
+    "name": "Taj Mahal",
+    "category": "Monument",
+    "address": {
+      "street": "Dharmapuri",
+      "city": "Agra",
+      "postalCode": "282001",
+      "country": "India",
+      "location": {
+        "latitude": 27.1751,
+        "longitude": 78.0421
+      }
+    }
+  },
+  {
+    "name": "Christ the Redeemer",
+    "category": "Monument",
+    "address": {
+      "street": "Parque Nacional da Tijuca",
+      "city": "Rio de Janeiro",
+      "postalCode": "22291-270",
+      "country": "Brazil",
+      "location": {
+        "latitude": -22.9519,
+        "longitude": -43.2105
+      }
+    }
+  },
+  {
+    "name": "Petra",
+    "category": "Historic",
+    "address": {
+      "street": "Wadi Musa",
+      "city": "Ma'an Governorate",
+      "postalCode": "71810",
+      "country": "Jordan",
+      "location": {
+        "latitude": 30.3285,
+        "longitude": 35.4444
+      }
+    }
+  },
+  {
+    "name": "Grand Canyon",
+    "category": "Natural",
+    "address": {
+      "street": "Grand Canyon Village",
+      "city": "Arizona",
+      "postalCode": "86023",
+      "country": "USA",
+      "location": {
+        "latitude": 36.1069,
+        "longitude": -112.1129
+      }
+    }
+  },
+  {
+    "name": "Sagrada Familia",
+    "category": "Religious",
+    "address": {
+      "street": "Carrer de Mallorca",
+      "city": "Barcelona",
+      "postalCode": "08013",
+      "country": "Spain",
+      "location": {
+        "latitude": 41.4036,
+        "longitude": 2.1744
+      }
+    }
+  },
+  {
+    "name": "Burj Khalifa",
+    "category": "Monument",
+    "address": {
+      "street": "1 Sheikh Mohammed bin Rashid Blvd",
+      "city": "Dubai",
+      "postalCode": "00000",
+      "country": "UAE",
+      "location": {
+        "latitude": 25.1972,
+        "longitude": 55.2744
+      }
+    }
+  },
+  {
+    "name": "Victoria Falls",
+    "category": "Natural",
+    "address": {
+      "street": "Livingstone",
+      "city": "Southern Province",
+      "postalCode": "00000",
+      "country": "Zambia",
+      "location": {
+        "latitude": -17.9243,
+        "longitude": 25.8572
+      }
+    }
+  },
+  {
+    "name": "Acropolis of Athens",
+    "category": "Historic",
+    "address": {
+      "street": "Athens 105 58",
+      "city": "Athens",
+      "postalCode": "10558",
+      "country": "Greece",
+      "location": {
+        "latitude": 37.9715,
+        "longitude": 23.7257
+      }
+    }
+  },
+  {
+    "name": "Angkor Wat",
+    "category": "Religious",
+    "address": {
+      "street": "Krong Siem Reap",
+      "city": "Siem Reap",
+      "postalCode": "00000",
+      "country": "Cambodia",
+      "location": {
+        "latitude": 13.4125,
+        "longitude": 103.8660
+      }
+    }
+  },
+  {
+    "name": "Niagara Falls",
+    "category": "Natural",
+    "address": {
+      "street": "Niagara Parkway",
+      "city": "Ontario",
+      "postalCode": "L2E 6T2",
+      "country": "Canada",
+      "location": {
+        "latitude": 43.0799,
+        "longitude": -79.0747
+      }
+    }
+  },
+  {
+    "name": "Alhambra",
+    "category": "Historic",
+    "address": {
+      "street": "Calle Real de la Alhambra",
+      "city": "Granada",
+      "postalCode": "18009",
+      "country": "Spain",
+      "location": {
+        "latitude": 37.1760,
+        "longitude": -3.5889
+      }
+    }
+  }
+]
