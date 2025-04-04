@@ -17,18 +17,21 @@ public class DataLoader {
     @Bean
     public CommandLineRunner loadData(PoiRepository poiRepository) {
         return args -> {
-            ObjectMapper mapper = new ObjectMapper();
-            TypeReference<List<POI>> typeRef = new TypeReference<>() {
-            };
+            if (poiRepository.count() == 0) {
+                ObjectMapper mapper = new ObjectMapper();
+                TypeReference<List<POI>> typeRef = new TypeReference<>() {
+                };
 
-            InputStream inputStream = getClass().getClassLoader().getResourceAsStream("pois.json");
+                InputStream inputStream = getClass().getClassLoader().getResourceAsStream("pois.json");
 
-            if (inputStream != null) {
-                List<POI> pois = mapper.readValue(inputStream, typeRef);
-                poiRepository.saveAll(pois);
-                System.out.println("Loaded initial POIs from pois.json");
-            } else {
-                System.err.println("Could not find pois.json in resources!");
+                if (inputStream != null) {
+                    List<POI> pois = mapper.readValue(inputStream, typeRef);
+                    poiRepository.saveAll(pois);
+                    System.out.println("Loaded initial POIs from pois.json");
+                } else {
+                    System.err.println("Could not find pois.json in resources!");
+                }
+
             }
 
         };
