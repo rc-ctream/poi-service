@@ -1,121 +1,58 @@
-# 🗺️ POI Backend Service – Technical Task
+# Points of Interest (POI) Backend Service
 
-## Overview
+This project provides a backend API service for managing Points of Interest (POIs). It utilizes Java (Spring Boot), PostgreSQL, and Docker for containerization.
 
-This project implements a simple **POI (Point of Interest)** backend service.  
-A *POI* represents a location that is useful or interesting to users — for example, a park, museum, restaurant, or landmark.
+## Technology Stack
 
-The service exposes a RESTful API that allows clients to:
+*   **Java:** 21 (Using Spring Boot framework)
+*   **Database:** PostgreSQL 16
+*   **Containerization:** Docker & Docker Compose
 
-- Retrieve all POIs (optionally filtered by category)
-- Browse available categories
-- Like or dislike POIs
-- View details of a single POI
-- *(Optional)* Add comments to a POI
+## Prerequisites
 
-No database or authentication is required — the application stores 20 predefined POIs in memory on startup.
+Before you begin, ensure you have the following installed on your system:
 
----
+*   **Docker:** Docker Engine and Docker Compose (usually included with Docker Desktop installations). [Download Docker](https://www.docker.com/get-started)
 
-## 📦 Requirements
+## Getting Started & Running the Application
 
-- **Technology Stack**:  
-  - Preferred: Java with Spring Boot  
+Follow these steps to build the Docker images and run the application and database containers:
 
-- **Persistence**:  
-  - Use **H2 in-memory database**  OR **PostgreSQL (Docker)**
-  - On application startup, load initial data from a `pois.json` file and store it in the database  
-  - All future operations (reads, updates, writes) must be performed via **Spring Data JPA**
+1.  **Navigate to Project Directory:**
+    Open your terminal or command prompt and change into the project's root directory (the one containing the `docker-compose.yml` file). If your project folder is named `pois`, use:
+    ```bash
+    cd pois
+    ```
+    *(Replace `pois` with the actual name of your project directory if it's different)*
 
----
+2.  **Run with Docker Compose:**
+    Execute the following command. This will build the Docker image for the Spring Boot application (if it doesn't exist or if changes are detected) and start both the application (`pois-service`) and the PostgreSQL database (`postgres`) containers.
+    ```bash
+    docker compose up --build
 
-## 🧱 POI Data Model
+## Testing the API with Swagger UI
 
-Each POI object consists of the following fields:
+Once the containers are up and the Spring Boot application has fully started:
 
-```json
-{
-  "id": "uuid",
-  "name": "string",
-  "category": "string",
-  "likes": 0,
-  "dislikes": 0,
-  "address": {
-    "street": "string",
-    "city": "string",
-    "postalCode": "string",
-    "country": "string",
-    "location": {
-      "latitude": "number",
-      "longitude": "number"
-    }
-  },
-  "comments": [
-    {
-      "author": "string",
-      "message": "string",
-      "timestamp": "ISO-8601 timestamp"
-    }
-  ]
-}
-```
----
+1.  **Open your web browser.**
+2.  **Navigate to the Swagger UI documentation:**
+    ```
+    http://localhost:8080/swagger-ui/index.html
+    ```
+    *(Ensure no other application on your host machine is using port 8080 if you encounter connection issues)*
 
-## 🔗 API Endpoints
+3.  **Explore and Test:**
+    You should now see the Swagger UI interface, which provides interactive documentation for the API endpoints. You can:
+    *   View available API endpoints.
+    *   See details about request parameters and response formats.
+    *   Execute API requests directly from the browser to test the functionality.
 
-The following REST endpoints should be implemented:
+## Stopping the Application
 
-| Method | Endpoint                      | Description                                                   |
-|--------|-------------------------------|---------------------------------------------------------------|
-| GET    | `/pois`                       | Returns all POIs, optionally filtered by category             |
-|        |                               | Example: `/pois?category=Museum`                              |
-| GET    | `/categories`                | Returns a list of all unique POI categories                   |
-| GET    | `/pois/{id}`                 | Returns details of a single POI                               |
-| POST   | `/pois/{id}/like`            | Increments the like counter                                   |
-| POST   | `/pois/{id}/dislike`         | Increments the dislike counter                                |
-| POST   | `/pois/{id}/comment` *(optional)* | Adds a comment to the POI
+To stop and remove the containers, networks, and volumes created by Docker Compose:
 
----
-
-## 🚀 Getting Started
-
-1. Clone the repository
-2. Create a new Git branch for your implementation  
-   - The branch name should follow the format: `firstname_lastname` (lowercase, separated by underscore)
-3. Implement the task in your branch
-4. Open the project in your IDE
-5. Run the application:
-   - For Maven:
-     ```bash
-     mvn spring-boot:run
-     ```
-   - Or execute the main class from your IDE
-6. Test the endpoints using Postman, curl, or Swagger (if integrated)
-7. On application startup, read the file `pois.json` and persist its content to the H2 database
-
-
----
-
-## 🧪 Expectations
-
-- Clean, well-structured, and maintainable code
-- Layered architecture (Controller → Service → Model)
-- REST-compliant use of HTTP methods and status codes
-- Proper error handling (e.g., return 404 if POI not found)
-- A short README with clear instructions on setup and testing
-- Use Mapstruct for mapping
-- Use Lombok for code reduction
-- Bonus: Unit tests, OpenAPI docs (Swagger), Docker support
-
----
-
-## 📚 Notes
-
-- The 20 POIs must be initialized on application startup (can be hardcoded)
-- The `/pois` endpoint should support optional filtering using a query parameter `category`
-- The `/comment` endpoint is optional, but appreciated if included
-- If you finish your task, please **push your code in your branch**
-
----
-
-Good luck and have fun! 🚀
+1.  **Open a terminal** in the same project directory where you ran `docker compose up`.
+2.  **Execute:**
+    ```bash
+    docker compose down
+    ```
