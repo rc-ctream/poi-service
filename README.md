@@ -79,14 +79,17 @@ The following REST endpoints should be implemented:
 ## 🚀 Getting Started
 
 1. Clone the repository
-2. Open the project in your IDE
-3. Run the application:
+2. Create a new Git branch for your implementation  
+   - The branch name should follow the format: `firstname_lastname` (lowercase, separated by underscore)
+3. Implement the task in your branch
+4. Open the project in your IDE
+5. Run the application:
    - For Maven:
      ```bash
      mvn spring-boot:run
      ```
    - Or execute the main class from your IDE
-4. Test the endpoints using Postman, curl, or Swagger (if integrated)
+6. Test the endpoints using Postman, curl, or Swagger (if integrated)
 
 ---
 
