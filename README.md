@@ -23,8 +23,9 @@ No database or authentication is required — the application stores 20 predefin
   - Preferred: Java with Spring Boot  
 
 - **Persistence**:  
-  - In-memory only (e.g., Java `List`, `Map`, etc.)  
-  - No external database
+  - Use **H2 in-memory database**  
+  - On application startup, load initial data from a `pois.json` file and store it in the database  
+  - All future operations (reads, updates, writes) must be performed via **Spring Data JPA**
 
 ---
 
@@ -90,6 +91,8 @@ The following REST endpoints should be implemented:
      ```
    - Or execute the main class from your IDE
 6. Test the endpoints using Postman, curl, or Swagger (if integrated)
+7. On application startup, read the file `pois.json` and persist its content to the H2 database
+
 
 ---
 
