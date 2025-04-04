@@ -23,7 +23,7 @@ No database or authentication is required — the application stores 20 predefin
   - Preferred: Java with Spring Boot  
 
 - **Persistence**:  
-  - Use **H2 in-memory database**  OR **PostGres (Docker) **
+  - Use **H2 in-memory database**  OR **PostgreSQL (Docker)**
   - On application startup, load initial data from a `pois.json` file and store it in the database  
   - All future operations (reads, updates, writes) must be performed via **Spring Data JPA**
 
