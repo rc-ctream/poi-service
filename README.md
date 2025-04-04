@@ -103,6 +103,8 @@ The following REST endpoints should be implemented:
 - REST-compliant use of HTTP methods and status codes
 - Proper error handling (e.g., return 404 if POI not found)
 - A short README with clear instructions on setup and testing
+- Use Mapstruct for mapping
+- Use Lombok for code reduction
 - Bonus: Unit tests, OpenAPI docs (Swagger), Docker support
 
 ---
