@@ -114,6 +114,7 @@ The following REST endpoints should be implemented:
 - The 20 POIs must be initialized on application startup (can be hardcoded)
 - The `/pois` endpoint should support optional filtering using a query parameter `category`
 - The `/comment` endpoint is optional, but appreciated if included
+- If you finish your task, please **push your code in your branch**
 
 ---
 
