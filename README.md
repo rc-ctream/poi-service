@@ -46,8 +46,8 @@ Each POI object consists of the following fields:
     "postalCode": "string",
     "country": "string",
     "location": {
-      "latitude": number,
-      "longitude": number
+      "latitude": "number",
+      "longitude": "number"
     }
   },
   "comments": [
