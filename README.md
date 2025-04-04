@@ -21,7 +21,6 @@ No database or authentication is required — the application stores 20 predefin
 
 - **Technology Stack**:  
   - Preferred: Java with Spring Boot  
-  - Alternatives like Node.js or Python (Flask/Django) are also acceptable
 
 - **Persistence**:  
   - In-memory only (e.g., Java `List`, `Map`, etc.)  
